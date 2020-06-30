@@ -339,6 +339,8 @@ export default {
         if (item) {
           this.autocompleteText(item)
         }
+
+        this.$emit('after-select', item)
       }
 
       this.hover(null)
